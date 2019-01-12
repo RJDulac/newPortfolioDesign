@@ -4,8 +4,9 @@ var openMenu = document.getElementById("open-menu");
 
 document.getElementById('open-menu').addEventListener('click',function () {
     menu.classList.add('show-nav');
-    menu.classList.remove('hide-nav')
+    menu.classList.remove('hide-nav');
     openMenu.style.display = 'none';
+    
     closeMenu.style.display = "block";
     
     

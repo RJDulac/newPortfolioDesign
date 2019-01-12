@@ -19,14 +19,14 @@ body,html {
     transform-origin: right;
 }
 .show-nav {
-    /* z-index: 2; */
+    z-index: 2;
     /* position: sticky; */
     float: right;
     display: block;
     animation: slide-menu .4s ease-in forwards;
 }
 .hide-nav {
-    animation: fade-out 1s ease-out;
+    animation: slide-out .4s ease-out forwards;
 }
 .nav-menu {
     display: flex;
@@ -99,11 +99,11 @@ body,html {
               transform: scaleX(1);
     }
   }
-@keyframes fade-out {
+@keyframes slide-out {
     from {
-              opacity: 0;
+              transform: scaleX(1);
     }
     to {
-              opacity: 1;
+              transform: scaleX(0);
     }
   }
